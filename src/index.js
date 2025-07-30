@@ -9,7 +9,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({ origin: "https://receipt-web-zeta.vercel.app" }));
 app.use(express.json());
 
 const orders = new Map();
